@@ -1,0 +1,83 @@
+﻿<div ng-hide="hide" class="modal fade" id="filterModal" tabindex="-1" role="dialog" aria-labelledby="filterModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="filterModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+
+                        <label for="first-name" class="form-control-label">First Name:</label>
+                        <div>
+                            <select name="first-name-condition" ng-model="filterCustomer.firstName.condition" class="form-control filter-condition-block">
+                                <option value="contains" selected>contains</option>
+                                <option value="equals">equals</option>
+                            </select>
+                            <input type="text" class="form-control filter-value-block" ng-model="filterCustomer.firstName.value" id="first-name" />
+                        </div>
+
+                        <label for="last-name" class="form-control-label">Last Name:</label>
+                        <div>
+                            <select name="last-name-condition" ng-model="filterCustomer.lastName.condition" class="form-control filter-condition-block">
+                                <option value="contains" selected>contains</option>
+                                <option value="equals">equals</option>
+                            </select>
+                            <input type="text" class="form-control filter-value-block" ng-model="filterCustomer.lastName.value" id="last-name" />
+                        </div>
+
+                        <label for="email" class="form-control-label">Email:</label>
+                        <div>
+                            <select name="email-condition" ng-model="filterCustomer.email.condition" class="form-control filter-condition-block">
+                                <option value="contains" selected>contains</option>
+                                <option value="equals">equals</option>
+                            </select>
+                            <input type="email" class="form-control filter-value-block" ng-model="filterCustomer.email.value" id="email" />
+                        </div>
+
+                        <label for="date-of-birth" class="form-control-label">Date Of Birth:</label>
+                        <div>
+                            <label for="from-date-of-birth" class="form-control-label filter-label-date">From</label>
+                            <input type="date" class="form-control filter-value-date" ng-model="filterCustomer.fromDayOfBirth" id="from-date-of-birth" />
+                            <label for="to-date-of-birth" class="form-control-label filter-label-date">To</label>
+                            <input type="date" class="form-control filter-value-date" ng-model="filterCustomer.toDayOfBirth" id="to-date-of-birth" />
+                        </div>
+
+                        <label for="mobile" class="form-control-label">Mobile:</label>
+                        <div>
+                            <select name="mobile-condition" ng-model="filterCustomer.mobile.condition" class="form-control filter-condition-block">
+                                <option value="contains" selected>contains</option>
+                                <option value="equals">equals</option>
+                            </select>
+                            <input type="tel" class="form-control filter-value-block" ng-model="filterCustomer.mobile.value" id="mobile" />
+                        </div>
+
+                        <label for="passport-data" class="form-control-label">Passport Data:</label>
+                        <div>
+                            <select name="passport-data-condition" ng-model="filterCustomer.passportData.condition" class="form-control filter-condition-block">
+                                <option value="contains" selected>contains</option>
+                                <option value="equals">equals</option>
+                            </select>
+                            <input type="text" class="form-control filter-value-block" ng-model="filterCustomer.passportData.value" id="passport-data" />
+                        </div>
+
+                        <label for="notes" class="form-control-label">Notes:</label>
+                        <div>
+                            <select name="notes-condition" ng-model="filterCustomer.notes.condition" class="form-control filter-condition-block">
+                                <option value="contains" selected>contains</option>
+                            </select>
+                            <input type="text" id="notes" ng-model="filterCustomer.notes.value" class="form-control filter-value-block" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" ng-click="sendFilterCustomer();" class="btn btn-primary">Filter</button>
+            </div>
+        </div>
+    </div>
+</div>

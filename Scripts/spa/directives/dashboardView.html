@@ -1,0 +1,12 @@
+﻿<div class="main-dashboard">
+    <h1>WELLCOME TO DASHBOARD</h1>
+
+    <div ng-controller="customersController" ng-if="customersDashboardSelected">
+        <div ng-include="'commonViews/customersDashboard.html'"></div>
+    </div>
+
+    <div ng-controller="apartmentsController" ng-if="apartmentsDashboardSelected">
+        <div ng-include="'commonViews/apartmentsDashboard.html'"></div>
+    </div>
+
+</div>

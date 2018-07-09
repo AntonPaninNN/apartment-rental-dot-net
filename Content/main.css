@@ -1,0 +1,250 @@
+﻿/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+
+.nav-bar-border {
+        border-radius: 0px;
+    }
+
+    .nav-bar-margin {
+        margin-bottom: 0px;
+    }
+
+    .nav-bar-z-index {
+        z-index: 1001;
+    }
+
+    .side-bar-top {
+        top: 0px;
+    }
+
+    .side-bar-items-top {
+        top: 60px;
+    }
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 150px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 150px;
+    width: 0;
+    height: 100%;
+    margin-left: -150px;
+    overflow-y: auto;
+    background: #333;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 150px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -150px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 22px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 150px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 150px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+.modal-login {
+  position: absolute;
+    width: 570px;
+    height: 360px;
+    top: 150px;
+    left: calc(50% - 285px);
+}
+
+.modal-signup {
+  position: absolute;
+    width: 800px;
+    height: 440px;
+    top: 150px;
+    left: calc(50% - 400px);
+}
+
+/* SLIDER */
+.slideTextStyle {
+    margin: 0;
+    color: #fff;
+    padding-top: 90px;
+    font-size: 82px;
+    font-family: "trebuchet ms", sans-serif;
+}
+
+.item {
+    background: #333;
+    text-align: center;
+    height: 100% !important;
+}
+
+.slideOne {
+    background-image: url("https://craigtomlinson.files.wordpress.com/2013/03/eugene-oregon-rental-house.jpg");
+    background-size: cover;
+}
+
+.slideTwo {
+    background-image: url("http://i.huffpost.com/gen/1282296/images/o-CALGARY-HOUSE-RENT-facebook.jpg");
+    background-size: cover;
+}
+
+.slideThree {
+    background-image: url("http://www.eliteprop.com/wp-content/uploads/2015/04/The-Kahana-House-pictures-1-013.jpg");
+    background-size: cover;
+}
+
+.carousel {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.slideText {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+}
+/* SLIDER */
+
+/* DASHBOARD */
+
+.main-dashboard {
+    margin-left: 200px;
+    margin-right: 50px;
+}
+
+/* DASHBOARD */
+
+/* FILTER POPUP */
+
+.filter-condition-block {
+    width: 100px;
+    display: inline;
+}
+
+.filter-value-block {
+    width: calc(99% - 100px);
+    display: inline;
+}
+
+.filter-label-date {
+    width: 60px;
+    display: inline;
+}
+
+.filter-value-date {
+    width: calc((96% - 42px) / 2);
+    display: inline;
+}
+
+/* FILTER POPUP */
+
+/* SORT POPUP */
+
+.sort-priority-block {
+    width: 70px;
+    display: inline;
+}
+
+.sort-block {
+    width: 1070px;
+}
+
+/* SORT POPUP */

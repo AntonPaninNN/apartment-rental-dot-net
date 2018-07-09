@@ -1,0 +1,50 @@
+﻿<div ng-hide="hide" class="modal fade" id="sortModal" tabindex="-1" role="dialog" aria-labelledby="sortModalLabel" aria-hidden="true">
+    <div class="modal-dialog sort-block" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="sortModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+
+                        <label for="first-name" class="form-control-label">First Name:</label>
+                        <input type="number" value="3" min="0" max="9" id="first-name" name="first-name-priority" 
+                               ng-model="sortCustomer.firstName.priority" class="form-control sort-priority-block" />
+
+                        <label for="last-name" class="form-control-label">Last Name:</label>
+                        <input type="number" value="0" min="0" max="9" id="last-name" name="last-name-priority" 
+                               ng-model="sortCustomer.lastName.priority" class="form-control sort-priority-block" />
+
+                        <label for="email" class="form-control-label">Email:</label>
+                        <input type="number" value="0" min="0" max="9" id="email" name="email-priority"
+                               ng-model="sortCustomer.email.priority" class="form-control sort-priority-block" />
+
+                        <label for="date-of-birth" class="form-control-label">Date Of Birth:</label>
+                        <input type="number" value="0" min="0" max="9" id="date-of-birth" name="date-of-birth-priority"
+                               ng-model="sortCustomer.dateOfBirth.priority" class="form-control sort-priority-block" />
+
+                        <label for="mobile" class="form-control-label">Mobile:</label>
+                        <input type="number" value="0" min="0" max="9" id="mobile" name="mobile-priority"
+                               ng-model="sortCustomer.mobile.priority" class="form-control sort-priority-block" />
+
+                        <label for="passport-data" class="form-control-label">Passport Data:</label>
+                        <input type="number" value="0" min="0" max="9" id="passport-data" name="passport-data-priority"
+                               ng-model="sortCustomer.passportData.priority" class="form-control sort-priority-block" />
+
+                        <label for="notes" class="form-control-label">Notes:</label>
+                        <input type="number" value="0" min="0" max="9" id="notes" name="notes-priority"
+                               ng-model="sortCustomer.notes.priority" class="form-control sort-priority-block" />
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" ng-click="sendSortCustomer();" class="btn btn-primary">Sort</button>
+            </div>
+        </div>
+    </div>
+</div>

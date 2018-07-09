@@ -1,0 +1,46 @@
+﻿<div ng-hide="hideCustomersDashboard">
+
+    <div style="margin-top: 50px;">
+        <div id="toolbar" class="btn-group">
+            <button type="button" data-toggle="modal" ng-click="showCreationPopup();" data-target="#exampleModal" class="btn btn-default">Create Customer</button>
+            <button type="button" data-toggle="modal" ng-click="editCustomer();" class="btn btn-default">Edit Customer</button>
+            <button type="button" data-toggle="modal" ng-click="showDeletePopup();" data-target="#deleteModal" class="btn btn-default">Delete Customer</button>
+            <button type="button" data-toggle="modal" ng-click="showFilterPopup();" data-target="#filterModal" class="btn btn-default">Filter Customer</button>
+            <button type="button" data-toggle="modal" ng-click="clearFilter();" class="btn btn-default">Clear Filter</button>
+            <!--button type="button" data-toggle="modal" ng-click="showSortPopup();" data-target="#sortModal" class="btn btn-default">Sort Customer</!--button-->
+        </div>
+        <table id="customersTable" data-toggle="customersTable" data-click-to-select="true" data-search="true" data-query-params="queryParams" data-pagination="true" data-side-pagination="server" data-show-refresh="true" data-show-toggle="true" data-show-columns="true"
+               data-toolbar="#toolbar"></table>
+    </div>
+
+    <!-- Modal Delete -->
+    <div ng-if="deletePopup">
+        <div ng-include="'commonViews/customers/delete.html'"></div>
+    </div>
+    <!-- Modal Delete -->
+
+    <!-- Modal Create -->
+    <div ng-if="creationPopup">
+        <div ng-include="'commonViews/customers/create.html'"></div>
+    </div>
+    <!-- Modal Create -->
+
+    <!-- Modal Update -->
+    <div ng-if="updatePopup">
+        <div ng-include="'commonViews/customers/update.html'"></div>
+    </div>
+    <!-- Modal Update -->
+
+    <!-- Modal Filter -->
+    <div ng-if="filterPopup">
+        <div ng-include="'commonViews/customers/filter.html'"></div>
+    </div>
+    <!-- Modal Filter -->
+
+    <!-- Modal Sort -->
+    <div ng-if="sortPopup">
+        <div ng-include="'commonViews/customers/sort.html'"></div>
+    </div>
+    <!-- Modal Sort -->
+
+</div>
